@@ -1,0 +1,30 @@
+/*! SİZE NASIL YARDIMCI OLABİLİRİZ? */
+
+.teklif-h1{
+    
+    font-weight: bold;
+    color: #2D536A;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.teklif-form{
+    padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
+.teklif-alt{
+    font-weight: bolder;
+    color: #2D536A !important;
+}
+
+.i-button{
+    width: 100%;
+    background: #2D536A!important;
+    border: none !important;
+    font-size: 1.2rem !important;
+    font-weight: bolder !important;
+}
+
+.i-button:hover{
+    background: #adcbdc!important;
+}

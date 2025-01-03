@@ -1,0 +1,346 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.navbar{
+    background-color: #0d1720;
+    z-index: 10;
+  
+}
+
+.teklif-nav{
+    background-color: #DBD9D5 !important;
+    color: rgb(17, 17, 90) !important;
+    font-size: 1rem !important;
+    font-weight: bolder !important;
+    border-radius: 10px !important;
+}
+
+.dropdown ul{
+    width: 250px;
+    background-color: #0d1720;  
+}
+
+ .dropdown-menu .dropdown-item {
+    color: aliceblue; 
+    font-weight: bold; 
+    text-align: center;
+  }
+
+  /* Dropdown ikonu rengini değiştirme */
+.navbar-toggler-icon {
+  background-color: #DBD9D5 !important; /* İstediğiniz renk kodunu buraya ekleyin */
+}
+
+
+  /*! FOOTER */
+  footer{
+
+    padding: 2rem;
+    width: 100%;
+    background: #0d1720;
+    font-size: 18px;
+    
+
+}
+
+
+
+a {
+    text-decoration: none !important;
+    color: aliceblue !important; 
+}
+Col a{
+    text-decoration: none;
+    color: aliceblue !important;
+}
+.fot{
+    text-decoration: none;
+    color: aliceblue !important;
+}
+
+
+
+
+
+.fa{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+
+}
+
+.fa-brands{
+
+    transition: transform 2s;
+
+}
+
+.fa-youtube:hover{
+    color:red;
+    transform: rotate(360deg) scale(2);
+   
+    
+}
+.fa-instagram:hover{
+color:#E1306C;
+transform: rotate(360deg) scale(2);
+}
+
+.fa-facebook:hover{
+    color: #1678F2;
+    transform: rotate(360deg) scale(2);
+}
+
+.fa-linkedin:hover{
+    color:#0174B1 ;
+    transform: rotate(360deg) scale(2);
+}
+.fa-x-twitter:hover{
+    color: black ;
+    transform: rotate(360deg) scale(2);
+}
+
+
+@media (max-width:1000px) {
+    .cal-2, .cal-3, .cal-4{
+        display: none;
+    }
+    
+
+    
+}
+
+
+
+/*! HOME */
+
+
+.home-main{
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    perspective: 1px;
+    transform-style:preserve-3d ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.home-giris1, .home-giris2, .home-giris3, .home-giris4{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style:preserve-3d ;
+}
+
+.home-giris1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../public/img/home1.webp") center;
+    background-size: 90% 90%;
+    transform: translateZ(-1px) scale(2.2) ;
+}
+
+.home-giris2{
+    background-color: #0d1720;
+}
+.home-giris3{
+ background-color: #DFDDDB;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.home-giris4{
+  background-color: #0d1720;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nasil-baslik{
+  color: #06518d !important;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nasil-cont{
+  padding-top:5rem !important ;
+  padding-bottom:5rem !important ;
+}
+
+
+
+.nasil-img{
+  max-width: 150px !important;
+  margin-bottom: 1rem;
+}
+
+
+.home-text{
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(0, 0,0,0.3), 5px 5px 5px rgb(255,255 ,255,0.5);
+    transform: scale(1,1.1) translate(-50%, 10%);
+}
+
+
+.container-swiper{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+}
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .swiperh1{
+    color:#DBD9D5;
+  
+  }
+
+  .content {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 calc(100% - 10px);
+    position: relative;
+    color: white ;
+    cursor: pointer;
+    font-weight: bold;
+    background-size: cover; /* Görüntü, container'a sığacak şekilde boyutlandırılacak */
+    background-position: center; /* Görüntü ortalanacak */
+    background-repeat: no-repeat; /* Görüntü tekrarlanmayacak */
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0d1720;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+  
+  .content-h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #DBD9D5;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .content:hover::before {
+    opacity: 1;
+  }
+  
+  .content:hover {
+    opacity: 1;
+  }
+  
+
+
+
+
+  .web-teknoloji-container{
+    width: 70%;
+    height:50%;
+   }
+   .wt-teknoloji{
+
+       color: aliceblue;
+       font-size: 3rem;
+       margin-bottom: 2rem;
+   }
+   
+   .carousel-item-custom {
+     max-width: 100%;
+   }
+   
+   .carousel-indicators-custom {
+     margin-top: 2rem;
+   }
+   
+   .indicator-image {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-size: cover;
+     margin: 0 5px;
+     cursor: pointer;
+   }
+   
+   .indicator-image.active {
+     border: 2px solid #007bff;
+   }
+   
+   
+   .carousel-image-container {
+   
+     width: 100%;
+     text-align: center;
+   }
+   
+   .carousel-image {
+     max-width: 100%;
+     height: auto;
+     object-fit: contain;
+   }
+   
+   
+   .carousel-card {
+     color: aliceblue;
+     border: 5px solid #0077A2;
+     padding: 2rem;
+   }
+   
+   .carousel-card-title {
+     font-size: 1.5rem;
+     font-weight: bold;
+   }
+   
+   .carousel-card-description {
+     padding-top: 1rem;
+     font-size: 1rem;
+     color: aliceblue;
+   }
+  
+  
+
+
+
+
+
+
+  
+
