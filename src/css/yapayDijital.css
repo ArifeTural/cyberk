@@ -1,119 +1,113 @@
 /*! YAPAY ZEKA ÇÖZÜMLERİ */
 
-.yapaygiris{
-margin: 3rem;
-background-image:url(../assets/ai-7265839_1280.webp) ;
-max-width: 100%;
-height: 75vh;
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-display: flex;
-justify-content: center;
-align-items: center;
-
+.yapaygiris {
+  margin: 3rem;
+  background-image: url(../assets/ai-7265839_1280.webp);
+  max-width: 100%;
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.yapaygiris2{
-    background-color: #08415670;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
+.yapaygiris2 {
+  background-color: #08415670;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
 
-
-.yapay-title{
-    color: rgba(240, 248, 255, 0.888);
-    font-weight: bolder;
-    text-align: center;
+.yapay-title {
+  color: rgba(240, 248, 255, 0.888);
+  font-weight: bolder;
+  text-align: center;
 }
 
-.yapay-par{
-    color: blanchedalmond;
-    font-weight: bolder;
+.yapay-par {
+  color: blanchedalmond;
+  font-weight: bolder;
 }
 
-.yz-kart{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.yz-kart {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
 
 /*! DİJİTAL DÖNÜŞÜM ÇÖZÜMLERİ */
 
-.dijital-gris{
-    margin-top: 3rem;
-    width: 100% !important;
-    max-height: 90vh !important;
-    display: flex;
-    flex-wrap: wrap !important;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
- }
-
-.digi-baslik{
-    color: #8991be !important;
-    font-weight: bold;
+.dijital-gris {
+  margin-top: 3rem;
+  width: 100% !important;
+  max-height: 90vh !important;
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
-.digi-par{
-   font-weight: bolder;
-   line-height: 1.8; 
-   color: rgb(24, 32, 145) !important;
+.digi-baslik {
+  color: #8991be !important;
+  font-weight: bold;
 }
 
- .w-t-baslik{
-    color: #041238 !important;
-    font-weight: bold;
-
-  }
-
-
-
-.ok{
-    width: 20px;
+.digi-par {
+  font-weight: bolder;
+  line-height: 1.8;
+  color: rgb(24, 32, 145) !important;
 }
 
-.digi-kart{
-    display: flex;
-    flex-direction: column; 
-    height: 100%;          
-    margin: 10px;   
-    border:none !important;     
-    padding-top: 1rem !important;
-    color: rgb(34, 46, 152) !important;
+.w-t-baslik {
+  color: #041238 !important;
+  font-weight: bold;
 }
 
-
-
-.digi-kart-baslik{
-   color: #3981c9 !important;
-   font-weight: bolder;
-   font-size: 20px;
+.ok {
+  width: 20px;
 }
 
-.digi-kart:hover{
-    background-color: #03182be8 !important;
-    color: aliceblue !important;
-
+.digi-kart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 10px;
+  border: none !important;
+  padding-top: 1rem !important;
+  color: rgb(34, 46, 152) !important;
 }
 
+.digi-kart-baslik {
+  color: #3981c9 !important;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.digi-kart:hover {
+  background-color: #03182be8 !important;
+  color: aliceblue !important;
+}
 
 /*! E-TİCARET &DANIŞMANLIK HİZMETLERİ */
-.eticaret-img{
-    border: 5px solid #041238;
-    padding: 20px;
-    width: 100%;
-    max-height: 80vh;
+.eticaret-img {
+  border: 5px solid #041238;
+  padding: 20px;
+  width: 100%;
+  max-height: 80vh;
 }
 
-.eticaret-kart{
-    box-shadow: rgba(27, 10, 177, 0.127) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.51) 0px 30px 60px -30px;
+.eticaret-kart {
+  box-shadow: rgba(27, 10, 177, 0.127) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.51) 0px 30px 60px -30px;
 }
 
-.eticaret-par{
-    color: #3981c9;
+.eticaret-par {
+  color: #3981c9;
 }

@@ -19,7 +19,7 @@ const Home = () => {
     },
     {
       id: 2,
-      image: "./img/navi/d-donusum.jpg",
+      image: "./img/navi/d-donusum.webp",
       title: "Dijital Dönüşüm Çözümleri",
       link: "/DijitalDonusum"
     },
@@ -31,31 +31,31 @@ const Home = () => {
     },
     {
       id: 4,
-      image: "./img/navi/moooobilll.jpg",
+      image: "./img/navi/mobil.webp",
       title: "Mobil Yazılım",
       link: "/MobilUygulama"
     },
     {
       id: 5,
-      image: "./img/navi/uuuuui.jpg",
+      image: "./img/navi/ui.webp",
       title: "UI & UX",
       link: "/Ui&Ux"
     },
     {
       id: 6,
-      image: "./img/navi/tasarim.jpg",
+      image: "./img/navi/tasarim.webp",
       title: "Web Tasarım",
       link: "/WebTasarim"
     },
     {
       id: 7,
-      image: "./img/navi/yaziiiilim.jpg",
+      image: "./img/navi/yazilim.webp",
       title: "Web Yazılım",
       link: "/WebYazilim"
     },
     {
       id: 8,
-      image: "./img/navi/drmmmm.jpg",
+      image: "./img/navi/drm.webp",
       title: "DRM",
       link: "/Drm"
     },
@@ -365,11 +365,11 @@ const Home = () => {
         <div>
 
         <div>
-  <h2 className='  fs-1 text-center wt-teknoloji'>KULLANDIĞIMIZ TEKNOLOJİLER</h2>
+  <h2 className='  fs-1 text-center wt-teknoloji text-light mb-5'>KULLANDIĞIMIZ TEKNOLOJİLER</h2>
 </div>
-<div className='web-teknoloji-container d-flex flex-column align-items-center justify-content-between flex-wrap gap-3 w-75 mx-auto '>
-  <Carousel activeIndex={activeIndex} onSelect={handleSelect} className="carousel-custom w-75 " indicators={false}>
-    {tekno.map((tech) => (
+<div className="web-teknoloji-container d-flex flex-column align-items-center justify-content-between gap-3 w-75 mx-auto">
+  <Carousel activeIndex={activeIndex} onSelect={handleSelect} className="carousel-custom w-100" indicators={false}>
+    {tekno.map((tech, index) => (
       <Carousel.Item key={tech.id} className="carousel-item-custom">
         <div className="carousel-image-container d-flex justify-content-center">
           <img
@@ -379,16 +379,15 @@ const Home = () => {
             style={{ height: '100px', objectFit: 'cover', maxWidth: '100%' }}
           />
         </div>
-        <div className="carousel-card border-5 text-center mt-1"> 
-          <h3 className='carousel-card-title fs-4 fw-bold'>{tech.title}</h3>
-          <p className='carousel-card-description'>{tech.description}</p>
+        <div className="carousel-card border-5 text-center mt-1">
+          <h3 className="carousel-card-title">{tech.title}</h3>
+          <p className="carousel-card-description">{tech.description}</p>
         </div>
       </Carousel.Item>
     ))}
   </Carousel>
 
-  {/* Carousel indicators */}
-  <div className="carousel-indicators-custom d-flex flex-wrap justify-content-center mt-3">
+  <div className="carousel-indicators-custom d-flex justify-content-center mt-3">
     {tekno.map((tech, index) => (
       <div
         key={tech.id}
@@ -408,6 +407,7 @@ const Home = () => {
     ))}
   </div>
 </div>
+
 
 
 

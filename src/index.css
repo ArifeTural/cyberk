@@ -33,20 +33,17 @@
     text-align: center;
   }
 
-  /* Dropdown item hover efekti */
 .navbar-nav .dropdown-menu .dropdown-item:hover {
-  color: #0d1720 !important; /* Hover sırasında istediğiniz renk */
-  background-color: rgba(90, 153, 212, 0.98); /* Hover arka plan rengini değiştirmek isterseniz */
+  color: #0d1720 !important; 
+  background-color: rgba(90, 153, 212, 0.98);
 }
 .navbar-nav .dropdown-menu .dropdown-item.active {
  
-  background-color: rgba(31, 83, 188, 0.98) !important; /* Hover arka plan rengini değiştirmek isterseniz */
+  background-color: rgba(31, 83, 188, 0.98) !important; 
 }
 
-
-
 .navbar-toggler-icon {
-  background-color: #DBD9D5 !important; /* İstediğiniz renk kodunu buraya ekleyin */
+  background-color: #DBD9D5 !important;
 }
 
 
@@ -246,9 +243,9 @@ transform: rotate(360deg) scale(2);
     color: white ;
     cursor: pointer;
     font-weight: bold;
-    background-size: cover; /* Görüntü, container'a sığacak şekilde boyutlandırılacak */
-    background-position: center; /* Görüntü ortalanacak */
-    background-repeat: no-repeat; /* Görüntü tekrarlanmayacak */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
   
   .content::before {
@@ -283,69 +280,134 @@ transform: rotate(360deg) scale(2);
 
 
 
-  .web-teknoloji-container{
-    width: 70%;
-    height:50%;
-   }
-   .wt-teknoloji{
+.web-teknoloji-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem; 
+  width: 100%; 
+  margin: 0 auto;
+ 
+}
 
-       color: aliceblue;
-       font-size: 3rem;
-       margin-bottom: 2rem;
-   }
-   
-   .carousel-item-custom {
-     max-width: 100%;
-   }
-   
-   .carousel-indicators-custom {
-     margin-top: 2rem;
-   }
-   
-   .indicator-image {
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
-     background-size: cover;
-     margin: 0 5px;
-     cursor: pointer;
-   }
-   
-   .indicator-image.active {
-     border: 2px solid #007bff;
-   }
-   
-   
-   .carousel-image-container {
-   
-     width: 100%;
-     text-align: center;
-   }
-   
-   .carousel-image {
-     max-width: 100%;
-     height: auto;
-     object-fit: contain;
-   }
-   
-   
-   .carousel-card {
-     color: aliceblue;
-     border: 5px solid #0077A2;
-     padding: 2rem;
-   }
-   
-   .carousel-card-title {
-     font-size: 1.5rem;
-     font-weight: bold;
-   }
-   
-   .carousel-card-description {
-     padding-top: 1rem;
-     font-size: 1rem;
-     color: aliceblue;
-   }
+.carousel-custom {
+  width: 100%; 
+}
+
+.carousel-item-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-image {
+  height: 100px;
+  object-fit: cover;
+  max-width: 100%;
+  margin-bottom: 1rem; 
+}
+
+
+.carousel-card {
+  color: #fff;
+  border: 5px solid #005B8F;
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.carousel-card-description {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.carousel-indicators-custom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.indicator-image {
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.indicator-image.active {
+  border: 2px solid #007bff;
+}
+
+.indicator-image:hover {
+  border: 2px solid #005b8f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 80px; 
+  }
+
+  .carousel-card {
+    padding: 1rem;
+    width: 90%; 
+  }
+
+  .carousel-card-title {
+    font-size: 1.25rem; 
+  }
+
+  .carousel-card-description {
+    font-size: 0.875rem;
+  }
   
+  .web-teknoloji-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 70px; 
+  }
+
+  .carousel-card {
+    padding: 0.8rem;
+  }
+
+  .carousel-card-title {
+    font-size: 1.1rem; 
+  }
+
+  .carousel-card-description {
+    font-size: 0.75rem; 
+  }
+
+  .indicator-image {
+    width: 40px; 
+    height: 40px;
+  }
+}
+
+
   
 
 
