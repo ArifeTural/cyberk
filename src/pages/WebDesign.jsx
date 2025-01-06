@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 
-const WebTasarim = () => {
+const WebDesign = () => {
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -149,7 +149,7 @@ const WebTasarim = () => {
   );
 };
 
-export default WebTasarim;
+export default WebDesign;
 
 
 

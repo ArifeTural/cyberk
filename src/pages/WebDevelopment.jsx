@@ -3,7 +3,7 @@ import { Carousel, Card, Row, Col, Container, Button, Collapse } from "react-boo
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-const WebYazilim = () => {
+const WebDevelopment = () => {
  
   
 
@@ -178,7 +178,7 @@ const WebYazilim = () => {
   );
 };
 
-export default WebYazilim;
+export default WebDevelopment;
 
 
 

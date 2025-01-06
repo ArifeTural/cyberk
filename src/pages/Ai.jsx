@@ -4,7 +4,7 @@ import "../css/yapayDijital.css"
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-function YapayZeka() {
+function Ai() {
   const [showModal, setShowModal] = useState({});
 
   const solutions = [
@@ -99,4 +99,4 @@ function YapayZeka() {
   );
 }
 
-export default YapayZeka;
+export default Ai;

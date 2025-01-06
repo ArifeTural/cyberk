@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 
-const Digital = () => {
+const DigitalTransformation= () => {
 
 
   const scrollToTop = () => {
@@ -179,4 +179,4 @@ const Digital = () => {
   );
 };
 
-export default Digital;
+export default DigitalTransformation;
