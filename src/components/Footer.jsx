@@ -37,25 +37,25 @@ const Footer = () => {
 
         <Col className='cal-3'>
         <ul>
-            <li><Link  to="/YapayZeka" onClick={scrollToTop}>Yapay Zeka Çözümleri</Link></li>
-            <li><Link to="/DijitalDonusum" onClick={scrollToTop}>Dijital Dönüşüm Çözümleri</Link></li>
-            <li><Link to="/Eticaret" onClick={scrollToTop}>E-Ticaret & Danışmanlık</Link></li>
+            <li><Link  to="/AI" onClick={scrollToTop}>Yapay Zeka Çözümleri</Link></li>
+            <li><Link to="/DigitalTransformation" onClick={scrollToTop}>Dijital Dönüşüm Çözümleri</Link></li>
+            <li><Link to="/EcommerceandConsultancy" onClick={scrollToTop}>E-Ticaret & Danışmanlık</Link></li>
           </ul>
         </Col>
         <Col className='cal-4'>
         <ul>
-            <li><Link to="/MobilUygulama" onClick={scrollToTop}>Mobil Yazılım</Link></li>
+            <li><Link to="/MobilApp" onClick={scrollToTop}>Mobil Yazılım</Link></li>
             <li><Link to="/Ui&Ux" onClick={scrollToTop}>UI & UX</Link></li>
-            <li><Link to="/WebTasarim" onClick={scrollToTop}>Web Tasarım</Link></li>
-            <li><Link to="/WebYazilim" onClick={scrollToTop}>Web Yazılım</Link></li>
-            <li><Link to="/Drm" onClick={scrollToTop}>DRM</Link></li>
+            <li><Link to="/WebDesign" onClick={scrollToTop}>Web Tasarım</Link></li>
+            <li><Link to="/WebDevelopment" onClick={scrollToTop}>Web Yazılım</Link></li>
+            <li><Link to="/DigitalRightsManagement" onClick={scrollToTop}>DRM</Link></li>
           </ul>
         </Col>
 
     
         <Col className='cal-5'>
 
-        <li><Link className="fs-5" to="/Teklif" onClick={scrollToTop}>Teklif Al</Link></li>
+        <li><Link className="fs-5" to="/HowCanWeAssistYou" onClick={scrollToTop}>Teklif Al</Link></li>
      
           <div className="fa d-flex align-items-center h-100">
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">

@@ -14,7 +14,6 @@ import MobilApp from '../pages/MobilApp'
 import GetaQuote from '../pages/GetaQuote'
 import Ecommerce from '../pages/Ecommerce'
 
-
 const AppRouter = () => {
   return (
     <BrowserRouter>
