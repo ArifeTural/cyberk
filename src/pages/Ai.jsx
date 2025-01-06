@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet';
 function YapayZeka() {
   const [showModal, setShowModal] = useState({});
 
-
   const solutions = [
     {
       title: "Makine Öğrenmesi",
