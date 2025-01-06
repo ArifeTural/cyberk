@@ -10,22 +10,22 @@ const Navbar = () => {
     { 
       title: "İşletme Çözümleri", 
       subpages: [
-        { title: "Yapay Zeka Çözümleri", path: "/YapayZeka" },
-        { title: "Dijital Dönüşüm Çözümleri", path: "/DijitalDonusum" },    
-        { title: "E-Ticaret & Danışmanlık", path: "/Eticaret" },
+        { title: "Yapay Zeka Çözümleri", path: "/AI" },
+        { title: "Dijital Dönüşüm Çözümleri", path: "DigitalTransformation" },    
+        { title: "E-Ticaret & Danışmanlık", path: "/EcommerceandConsultancy" },
       ],
     },
     { 
       title: "Özel Yazılım Çözümleri", 
       subpages: [
-        { title: "Mobil Yazılım", path: "/MobilUygulama" },
+        { title: "Mobil Yazılım", path: "/MobilApp" },
         { title: "UI & UX", path: "/Ui&Ux" },
-        { title: "Web Tasarım", path: "/WebTasarim" },
-        { title: "Web Yazılım", path: "/WebYazilim" },
-        { title: "DRM", path: "/Drm" },
+        { title: "Web Tasarım", path: "/WebDesign" },
+        { title: "Web Yazılım", path: "/WebDevelopment" },
+        { title: "DRM", path: "/DigitalRightsManagement" },
       ],
     },
-    { title: "Teklif Al", path: "/Teklif" },
+    { title: "Teklif Al", path: "/HowCanWeAssistYou" },
   ];
 
   const [show, setShow] = useState(false);
@@ -64,7 +64,7 @@ const Navbar = () => {
                         : "nav-text text-light fw-bolder fs-5 "
                     } ${
                       location.pathname === item.path 
-                        ? "active text-decoration-underline " 
+                        ? "active  " 
                         : ""
                     }`} 
                     to={item.path}
@@ -89,7 +89,7 @@ const Navbar = () => {
                           <NavLink 
                             className={`dropdown-item ${
                               location.pathname === subitem.path 
-                                ? "active text-decoration-underline text-danger-emphasis" 
+                                ? "active " 
                                 : ""
                             }`} 
                             to={subitem.path}

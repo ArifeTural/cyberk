@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import eticaret from "../assets/eticaret.webp"
 import { Helmet } from 'react-helmet';
 
-function Eticaret() {
+function Ecommerce() {
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -200,4 +200,4 @@ function Eticaret() {
   );
 }
 
-export default Eticaret;
+export default Ecommerce;

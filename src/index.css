@@ -33,7 +33,18 @@
     text-align: center;
   }
 
-  /* Dropdown ikonu rengini değiştirme */
+  /* Dropdown item hover efekti */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  color: #0d1720 !important; /* Hover sırasında istediğiniz renk */
+  background-color: rgba(90, 153, 212, 0.98); /* Hover arka plan rengini değiştirmek isterseniz */
+}
+.navbar-nav .dropdown-menu .dropdown-item.active {
+ 
+  background-color: rgba(31, 83, 188, 0.98) !important; /* Hover arka plan rengini değiştirmek isterseniz */
+}
+
+
+
 .navbar-toggler-icon {
   background-color: #DBD9D5 !important; /* İstediğiniz renk kodunu buraya ekleyin */
 }
