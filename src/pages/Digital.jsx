@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 
-const Dijital = () => {
+const Digital = () => {
 
 
   const scrollToTop = () => {
@@ -179,4 +179,4 @@ const Dijital = () => {
   );
 };
 
-export default Dijital;
+export default Digital;
