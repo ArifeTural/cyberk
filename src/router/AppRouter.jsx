@@ -1,17 +1,17 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
 import Navbar from '../components/Navbar'
 import Home from '../pages/Home'
 import Drm from '../pages/Drm'
-import MobilUygulama from '../pages/MobilUygulama'
 import Uiux from '../pages/Uiux'
-import Teklif from '../pages/Teklif'
 import Eticaret from '../pages/Eticaret'
 import Footer from '../components/Footer'
 import WebDevelopment from '../pages/WebDevelopment'
 import WebDesign from '../pages/WebDesign'
-import Ai from '../pages/AI'
+import Ai from '../pages/Ai'
+import DigitalTransformation from '../pages/DigitalTransformation'
+import MobilApp from '../pages/MobilApp'
+import GetaQuote from '../pages/GetaQuote'
 
 
 const AppRouter = () => {
@@ -20,15 +20,15 @@ const AppRouter = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/DijitalDonusum' element={</>} />
-        <Route path='/Drm' element={<Drm />} />
-        <Route path='/MobilUygulama' element={<MobilUygulama />} />
+        <Route path='/DigitalTransformation' element={<DigitalTransformation/>} />
+        <Route path='/DigitalRightsManagement' element={<Drm />} />
+        <Route path='/MobilApp' element={<MobilApp />} />
         <Route path='/Ui&Ux' element={<Uiux />} />
-        <Route path='/WebTasarim' element={<WebDesign/>} />
-        <Route path='/WebYazilim' element={<WebDevelopment />} />
-        <Route path='/YapayZeka' element={<Ai />} />
+        <Route path='/WebDesign' element={<WebDesign/>} />
+        <Route path='/WebDevelopment' element={<WebDevelopment />} />
+        <Route path='/AI' element={<Ai />} />
         <Route path='/Eticaret' element={<Eticaret />} />
-        <Route path='/Teklif' element={<Teklif />} />
+        <Route path='/HowCanWeAssistYou' element={<GetaQuote />} />
         <Route path='*' element={<Home />} /> 
       </Routes>
       <Footer/>

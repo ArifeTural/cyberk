@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import "../css/iletisim.css"
 import { useTranslation } from "react-i18next";
 
-const Teklif = () => {
+const GetaQuote = () => {
   const { t } = useTranslation();
 
   const [FirstName, setFirstName] = useState('');
@@ -161,4 +161,4 @@ const Teklif = () => {
   );
 };
 
-export default Teklif;
+export default GetaQuote;

@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 
 
 
-const MobilUygulama = () => {
+const MobilApp = () => {
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -175,7 +175,7 @@ const MobilUygulama = () => {
   )
 }
 
-export default MobilUygulama
+export default MobilApp
 
 
 
