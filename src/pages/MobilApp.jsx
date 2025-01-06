@@ -15,59 +15,59 @@ const MobilApp = () => {
       id: 1,
       image: "./img/swiperslider1.jpg",
       title: "iOS Uygulama Geliştirme",
-      par: "iOS uygulama geliştirme hizmetlerimiz, Apple kullanıcıları için güvenli, hızlı ve kullanıcı dostu çözümler sunar. Yenilikçi özelliklerle iPhone ve iPad için benzersiz deneyimler yaratıyoruz.",
+      par: "CyberKoc.com olarak, iOS uygulama geliştirme hizmetlerimizle Apple kullanıcılarına güvenli, hızlı ve kullanıcı dostu çözümler sunuyoruz. Yenilikçi özelliklerle iPhone ve iPad için eşsiz deneyimler oluşturuyoruz.",
     },
     {
       id: 2,
       image: "./img/swiperslider1.jpg",
       title: "Android Uygulama Geliştirme",
-      par: "Android uygulama geliştirme ile geniş kitlelere ulaşın. Güçlü performans, modern tasarım ve cihaz uyumluluğu sağlayarak işinizi büyütmek için optimize edilmiş çözümler sunuyoruz.",
+      par: "CyberKoc.com, Android uygulama geliştirme ile geniş kitlelere hitap eder. Performanslı, modern tasarım ve uyumlu çözümlerle işinizi büyütmenizi sağlıyoruz.",
     },
     {
       id: 3,
       image: "./img/swiperslider1.jpg",
       title: "Çapraz Platform Uygulama Geliştirme",
-      par: "Tek kod tabanıyla iOS ve Android’de çalışabilen uygulamalar geliştirin. Zaman tasarrufu sağlayan, maliyeti düşüren ve performansı artıran çözümlerimizle öne çıkın.",
+      par: "CyberKoc.com, çapraz platform uygulama geliştirme hizmetleriyle iOS ve Android’de çalışabilen tek bir kod tabanı kullanarak maliyetleri düşürürken verimliliği artırır.",
     },
     {
       id: 4,
       image: "./img/swiperslider1.jpg",
       title: "Akıllı Saat Uygulama Sistemleri",
-      par: "Akıllı saat uygulamaları ile giyilebilir teknoloji dünyasına adım atın. Sağlık, fitness ve bildirim yönetimi için özel çözümlerle kullanıcılarınızın hayatını kolaylaştırıyoruz.",
+      par: "Akıllı saat uygulamalarıyla giyilebilir teknoloji dünyasına adım atın. Sağlık, fitness ve bildirim yönetimi için özelleştirilmiş çözümlerle kullanıcılarınızın yaşamını kolaylaştırıyoruz.",
     },
     {
       id: 5,
       image: "./img/swiperslider1.jpg",
       title: "E-ticaret ve Mobil Ödeme Uygulamaları",
-      par: "E-ticaret uygulamalarıyla satışlarınızı artırın. Hızlı, güvenli ödeme sistemleri ve kullanıcı dostu arayüzlerle mobil alışveriş deneyimini geliştiren yenilikçi çözümler sunuyoruz.",
+      par: "E-ticaret uygulamalarıyla online satışlarınızı artırın. Güvenli ödeme sistemleri ve kullanıcı dostu arayüzlerle mobil alışveriş deneyimini iyileştirin.",
     },
     {
-      id: 5,
+      id: 6,
       image: "./img/swiperslider1.jpg",
       title: "Artırılmış Gerçeklik (AR) Uygulamaları",
-      par: "AR uygulamalarıyla ürün deneyimini artırın. Eğitimden e-ticarete yenilikçi çözümlerle kullanıcıların dünyasını zenginleştiren artırılmış gerçeklik teknolojisiyle geleceği yakalayın.",
+      par: "Artırılmış Gerçeklik (AR) uygulamaları ile kullanıcı deneyimini geliştirin. Eğitimden e-ticarete kadar pek çok alanda yenilikçi çözümler sunuyoruz.",
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Mobil Uygulama Geliştirme Hizmetleri - iOS ve Android</title>
+        <title>Mobil Uygulama Geliştirme Hizmetleri - iOS ve Android | CyberKoc</title>
         <meta
           name="description"
-          content="Özel mobil uygulama geliştirme hizmetlerimiz ile iOS ve Android platformlarında modern, kullanıcı dostu ve yüksek performanslı uygulamalar sunuyoruz."
+          content="CyberKoc.com olarak, özel mobil uygulama geliştirme hizmetleriyle iOS ve Android platformlarında yüksek performanslı, kullanıcı dostu uygulamalar sunuyoruz. Mobil uygulama geliştirme süreçlerini keşfedin."
         />
         <meta
           name="keywords"
-          content="Mobil uygulama, iOS, Android, çapraz platform, e-ticaret uygulamaları, akıllı saat, artırılmış gerçeklik"
+          content="mobil uygulama geliştirme, iOS, Android, çapraz platform, e-ticaret uygulamaları, akıllı saat uygulamaları, artırılmış gerçeklik, mobil ödeme"
         />
         <meta
           property="og:title"
-          content="Mobil Uygulama Geliştirme Hizmetleri - iOS ve Android"
+          content="Mobil Uygulama Geliştirme Hizmetleri - iOS ve Android | CyberKoc"
         />
         <meta
           property="og:description"
-          content="Özel mobil uygulama geliştirme hizmetlerimizle işletmenizi dijital dünyada öne taşıyoruz. iOS ve Android çözümleri sunuyoruz."
+          content="CyberKoc.com olarak, iOS ve Android platformlarında modern ve güvenli mobil uygulama geliştirme hizmetleri sunuyoruz. Mobil uygulama geliştirme süreçlerimizi keşfedin."
         />
         <meta property="og:image" content={mobilimg} />
       </Helmet>
@@ -78,35 +78,35 @@ const MobilApp = () => {
             <img
               className="mobil-first-img"
               src={mobilimg}
-              alt="Mobil uygulama resmi"
+              alt="Mobil uygulama geliştirme"
             />
           </Col>
 
           <Col md={6} className="first-text">
             <h1 className="mobil-title">
               Özel Mobil Uygulama Geliştirme Hizmetleri - iOS ve Android
-              Çözümleri
+              Çözümleri | CyberKoc
             </h1>
-            <p className="first-par text-center ">
-              Mobil uygulama geliştirme hizmetlerimizle işletmenizi dijital
-              dünyada öne taşıyoruz. Uzman ekibimiz, iOS ve Android platformları
-              için kullanıcı dostu, yüksek performanslı ve modern uygulamalar
-              sunar. İş süreçlerinizi kolaylaştıran, müşteri deneyimini
-              iyileştiren ve markanızı güçlendiren özel çözümlerle mobil
-              teknolojilerin gücünü keşfedin!
+            <p className="first-par text-center">
+              CyberKoc.com olarak, mobil uygulama geliştirme hizmetlerimizle
+              işletmenizi dijital dünyada öne taşıyoruz. Uzman ekibimizle, iOS ve
+              Android platformları için kullanıcı dostu, yüksek performanslı ve
+              modern uygulamalar sunuyoruz. İş süreçlerinizi hızlandıran ve
+              müşteri deneyimini iyileştiren çözümlerimizle mobil teknolojilerin
+              gücünü keşfedin!
             </p>
           </Col>
         </Row>
       </div>
-      {/* Hizmetler */}
+
       <div>
-        <h2 className="mobilhizmetlerh2">HİZMETLERİMİZ</h2>
+        <h2 className="mobilhizmetlerh2">Mobil Uygulama Geliştirme Hizmetlerimiz</h2>
         <Row className="mobil-hizmetler">
-          {mobilhizmetler.map((ag) => {
-            const { id, title, par } = ag;
+          {mobilhizmetler.map((service) => {
+            const { id, title, par } = service;
             return (
-              <Col md={4}>
-                <Card className=" border-0" key={id}>
+              <Col md={4} key={id}>
+                <Card className="border-0">
                   <Card.Body className="mobil-hizmetler-kart">
                     <Card.Title className="fs-4 text-info">{title}</Card.Title>
                     <Card.Text style={{ color: "#142e70" }}>{par}</Card.Text>
@@ -117,13 +117,14 @@ const MobilApp = () => {
           })}
         </Row>
       </div>
-      {/* Hizmet Süreci */}
+
       <div className="hiz-surec">
         <Row className="m-5 text-center">
           <Col>
-            <h2 className="mobilhizmetlerh2 fs-1">Hizmet Sürecimiz</h2>
+            <h2 className="mobilhizmetlerh2 fs-1">Mobil Uygulama Geliştirme Süreci</h2>
             <p className="fs-5" style={{ color: "#142e70" }}>
-              Mobil uygulama geliştirme sürecimiz dört temel adımdan oluşur:
+              Mobil uygulama geliştirme sürecimiz, her aşamada kaliteli ve
+              kullanıcı dostu sonuçlar elde etmek için optimize edilmiştir.
             </p>
           </Col>
         </Row>
@@ -135,8 +136,7 @@ const MobilApp = () => {
                   Keşif ve Analiz
                 </Card.Title>
                 <Card.Text style={{ color: "#142e70" }}>
-                  {" "}
-                  İhtiyaçlarınızı anlar ve stratejik çözümler tasarlarız.
+                  İhtiyaçlarınızı analiz eder, stratejik çözümler oluştururuz.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -148,7 +148,7 @@ const MobilApp = () => {
                   Tasarım ve Prototip
                 </Card.Title>
                 <Card.Text style={{ color: "#142e70" }}>
-                  Kullanıcı odaklı arayüzler tasarlar ve test ederiz.
+                  Kullanıcı odaklı tasarımlar ve prototipler oluştururuz.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -160,7 +160,7 @@ const MobilApp = () => {
                   Kodlama ve Test
                 </Card.Title>
                 <Card.Text style={{ color: "#142e70" }}>
-                  Performansı optimize edilmiş, hatasız uygulamalar
+                  Performansı optimize edilmiş, hatasız mobil uygulamalar
                   geliştiririz.
                 </Card.Text>
               </Card.Body>
@@ -173,19 +173,18 @@ const MobilApp = () => {
                   Yayınlama ve Destek
                 </Card.Title>
                 <Card.Text style={{ color: "#142e70" }}>
-                  Uygulamanızı markete sunar ve sürekli destek sağlarız.
+                  Uygulamanızı markete sunar ve sürekli teknik destek sağlarız.
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
         </Row>
       </div>
-      {/* İletişim */}
+
       <Row className="text-center m-5">
         <Col>
           <h3 style={{ color: "#142e70" }}>
-            İhtiyacınıza uygun mobil uygulama çözümleri için hemen bizimle
-            iletişime geçin!
+            Hemen mobil uygulama çözümleriniz için bizimle iletişime geçin!
           </h3>
           <Link to="/Teklif" onClick={scrollToTop}>
             <Button
@@ -202,3 +201,4 @@ const MobilApp = () => {
 };
 
 export default MobilApp;
+

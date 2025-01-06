@@ -104,9 +104,7 @@ const DigitalTransformation = () => {
   return (
     <Container>
       <Helmet>
-        <title>
-          Dijital Dönüşüm Çözümleri | İşletmenizi Geleceğe Taşıyan Teknolojiler
-        </title>
+        <title>Dijital Dönüşüm Çözümleri | CyberKoc Teknolojileri</title>
         <meta
           name="description"
           content="Bulut teknolojileri, yapay zeka, büyük veri, siber güvenlik ve daha fazlasıyla işletmenizi dijital dönüşüm sürecine hazırlayın."
@@ -117,7 +115,7 @@ const DigitalTransformation = () => {
         />
         <meta
           property="og:title"
-          content="Dijital Dönüşüm Çözümleri | İşletmenizi Geleceğe Taşıyan Teknolojiler"
+          content="Dijital Dönüşüm Çözümleri | CyberKoc Teknolojileri"
         />
         <meta
           property="og:description"
@@ -126,11 +124,11 @@ const DigitalTransformation = () => {
         <meta property="og:image" content={digi} />
         <meta
           property="og:url"
-          content="https://www.orneksite.com/dijital-donusum"
+          content="https://www.cyberkoc.com/dijital-donusum"
         />
         <meta
           name="twitter:title"
-          content="Dijital Dönüşüm Çözümleri | İşletmenizi Geleceğe Taşıyan Teknolojiler"
+          content="Dijital Dönüşüm Çözümleri | CyberKoc Teknolojileri"
         />
         <meta
           name="twitter:description"
@@ -139,12 +137,16 @@ const DigitalTransformation = () => {
         <meta name="twitter:image" content={digi} />
       </Helmet>
 
-      <div className="card mt-5 mb-5   border-0">
+      <div className="card mt-5 mb-5 border-0">
         <div className="row mb-5 dijital-gris g-0">
-          <div className=" col-md-12 col-lg-8">
-            <img src={digi} className="digi-img img-fluid rounded" alt="..." />
+          <div className="col-md-12 col-lg-8">
+            <img
+              src={digi}
+              className="digi-img img-fluid rounded"
+              alt="Dijital Dönüşüm"
+            />
           </div>
-          <div className=" col-md-12 col-lg-4">
+          <div className="col-md-12 col-lg-4">
             <div className="card-body">
               <h1 className="card-title digi-baslik">
                 Dijital Dönüşüm Çözümleri: İşletmenizi Geleceğe Taşıyan
@@ -153,29 +155,28 @@ const DigitalTransformation = () => {
               <p className="card-text digi-par">
                 Bulut teknolojileri, yapay zeka, büyük veri, siber güvenlik ve
                 daha fazlasıyla işletmenizi dijital dönüşüm sürecine hazırlayın.
-                Verimliliği artıran modern çözümlerle rekabette öne geçin.Bu
+                Verimliliği artıran modern çözümlerle rekabette öne geçin. Bu
                 başlık ve açıklama, hem arama motorları için optimize edilmiş
                 hem de kullanıcıların ilgisini çekecek şekilde hazırlanmıştır.
-                Geri bildirimleriniz varsa geliştirebilirim!
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <h2 className="text-center fw-bold text-secondary">HİZMETLERİMİZ</h2>
-      </div>
-      <Row className="row py-5  mt-4">
+
+      <h2 className="text-center fw-bold text-secondary">HİZMETLERİMİZ</h2>
+
+      <Row className="row py-5 mt-4">
         {solutions.map((solution, index) => (
-          <div className="col-md-12 col-lg-6  d-flex mb-4 " key={index}>
-            <div className="digi-kart card h-100 ">
+          <div className="col-md-12 col-lg-6 d-flex mb-4" key={index}>
+            <div className="digi-kart card h-100">
               <div className="digi-kart-baslik text-center font-weight-bold">
                 {solution.title}
               </div>
-              <div className="digi-kart-cerceve  card-body">
+              <div className="digi-kart-cerceve card-body">
                 <ul className="digi-kart-liste">
                   {solution.description.map((item, idx) => (
-                    <li className="list-group-item " key={idx}>
+                    <li className="list-group-item" key={idx}>
                       <img src={ok} alt="ok" className="ok" /> {item}
                     </li>
                   ))}
@@ -186,7 +187,6 @@ const DigitalTransformation = () => {
         ))}
       </Row>
 
-      {/* İletişim */}
       <Row className="text-center m-5">
         <Col>
           <h3 style={{ color: "#142e70" }}>
@@ -195,7 +195,11 @@ const DigitalTransformation = () => {
           </h3>
           <Link to="/Teklif" onClick={scrollToTop}>
             <Button
-              style={{ color: "aliceblue", backgroundColor: "#142e70" }}
+              style={{
+                color: "aliceblue",
+                backgroundColor: "#142e70",
+                borderRadius: "25px",
+              }}
               size="lg"
             >
               Teklif Al
@@ -208,3 +212,7 @@ const DigitalTransformation = () => {
 };
 
 export default DigitalTransformation;
+
+
+    
+

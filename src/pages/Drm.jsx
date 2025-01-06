@@ -113,26 +113,31 @@ const Drm = () => {
     <>
       <Helmet>
         <title>
-          Dijital Haklar Yönetimi (DRM) Nedir? | DRM Çözümleri ve Türleri
+          Dijital Haklar Yönetimi (DRM) Nedir? | CyberKoc DRM Çözümleri
         </title>
         <meta
           name="description"
-          content="Dijital Haklar Yönetimi (DRM) ile içeriklerinizi koruma ve güvenliğini sağlama hakkında detaylı bilgi. DRM türleri ve uygulama alanları hakkında her şey."
+          content="CyberKoc, Dijital Haklar Yönetimi (DRM) ile içeriklerinizi güvenli bir şekilde koruma ve yönetme konusunda lider çözümler sunar. DRM türleri ve uygulama alanları hakkında daha fazla bilgi edinmek için tıklayın."
         />
         <meta
           name="keywords"
-          content="DRM, Dijital Haklar Yönetimi, içerik koruma, DRM türleri, şifreleme, su izleme, içerik yönetimi"
+          content="DRM, Dijital Haklar Yönetimi, içerik koruma, DRM türleri, şifreleme, su izleme, içerik yönetimi, CyberKoc"
         />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="Dijital Haklar Yönetimi (DRM) Hakkında Her Şey"
+          content="Dijital Haklar Yönetimi (DRM) | CyberKoc"
         />
         <meta
           property="og:description"
-          content="Dijital içeriklerinizi korumak için kullanılan DRM çözümleri. DRM türleri ve uygulama alanları hakkında kapsamlı bilgiler."
+          content="CyberKoc tarafından sunulan DRM çözümleriyle dijital içeriklerinizi koruyun. DRM türleri, avantajları ve uygulama alanları hakkında kapsamlı bilgiye sahip olun."
         />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.cyberkoc.com/drm" // sayfa URL'nizi buraya ekleyin
+        />
+        <link rel="canonical" href="https://www.cyberkoc.com/drm" />
       </Helmet>
 
       <Container className="mt-5">
@@ -142,7 +147,7 @@ const Drm = () => {
             <Card className="drm-giris border-0 shadow-lg text-center mb-5">
               <Card.Body className="d-flex justify-content-center align-items-center">
                 <div className="drm-giris-text p-5">
-                  <h1 className="display-4 ">
+                  <h1 className="display-4">
                     Dijital Haklar Yönetimi (DRM) Hakkında Her Şey
                   </h1>
                   <p className="lead">
@@ -228,11 +233,11 @@ const Drm = () => {
                         onClick={() =>
                           handleModalShow(
                             "Müzik ve Video Dağıtımı",
-                            "Dijital medya platformları, müzik ve video içeriklerini telif hakkı sahiplerinin izin verdiği şekilde sunmak için Dijital Haklar Yönetimi (DRM) kullanır. Örneğin, Spotify, Netflix ve Amazon Prime Video, içeriklerini DRM ile koruyarak yalnızca lisanslı kullanıcıların erişimini sağlar ve izinsiz kopyalama veya dağıtımı engeller. DRM, içeriklerin orijinal halini koruyarak telif hakkı ihlallerini önler."
+                            "Spotify, Netflix ve Amazon Prime Video gibi dijital medya platformları, içeriklerini DRM kullanarak korur."
                           )
                         }
                       >
-                        Detaylı Oku
+                        Daha Fazla Oku
                       </Button>
                     </Card.Body>
                   </Card>
@@ -241,23 +246,23 @@ const Drm = () => {
                   <Card className="drm-kart">
                     <Card.Body className="drm-alt">
                       <Card.Title className="text-secondary fw-bold">
-                        E-Kitaplar
+                        Yazılım Güvenliği
                       </Card.Title>
                       <Card.Text className="text-secondary">
-                        E-kitap platformları, kitapların izinsiz paylaşılmasını
-                        engellemek amacıyla DRM kullanır.
+                        Yazılım geliştiricileri, ürünlerinin izinsiz
+                        kopyalanmasını önlemek için DRM kullanırlar.
                       </Card.Text>
                       <Button
                         variant="primary"
                         className="mt-2"
                         onClick={() =>
                           handleModalShow(
-                            "E-Kitaplar",
-                            "E-kitap platformları, dijital kitapların izinsiz paylaşılmasını ve kopyalanmasını önlemek amacıyla Dijital Haklar Yönetimi (DRM) teknolojisini kullanır. DRM, e-kitapların yalnızca yetkilendirilmiş kullanıcılar tarafından belirli koşullarda erişilmesini sağlar. Örneğin, DRM sayesinde, bir kullanıcı kitabı yalnızca satın aldığı cihaza indirip okuyabilir ve kitabı başka kişilere iletmesi engellenir. Ayrıca, DRM teknolojisi, kitapların kopyalanmasını, baskı yapılmasını veya farklı platformlarda dağıtılmasını kısıtlar. Bu sayede, yazarların ve yayıncıların telif hakları korunur ve e-kitapların izinsiz dağıtımına karşı güvenlik sağlanır."
+                            "Yazılım Güvenliği",
+                            "Yazılım geliştiricileri, ürünlerinin izinsiz kopyalanmasını önlemek için DRM kullanırlar."
                           )
                         }
                       >
-                        Detaylı Oku
+                        Daha Fazla Oku
                       </Button>
                     </Card.Body>
                   </Card>
@@ -266,41 +271,23 @@ const Drm = () => {
             </Col>
           </Row>
         </section>
-
-        {/* Modal */}
-        <Modal show={showModal} onHide={handleModalClose}>
-          <Modal.Header closeButton>
-            <Modal.Title className="text-secondary">{modalTitle}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body className="text-secondary">{modalContent}</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleModalClose}>
-              Kapat
-            </Button>
-          </Modal.Footer>
-        </Modal>
-
-        {/* İletişim */}
-        <Row className="text-center m-5">
-          <Col>
-            <h3 style={{ color: "#142e70" }}>
-              DRM (Dijital Hak Yönetimi) çözümlerimizle ilgili detaylı bilgi
-              almak ve size özel bir teklif oluşturmak için bizimle iletişime
-              geçin!
-            </h3>
-            <Link to="/Teklif" onClick={scrollToTop}>
-              <Button
-                style={{ color: "aliceblue", backgroundColor: "#142e70" }}
-                size="lg"
-              >
-                Teklif Al
-              </Button>
-            </Link>
-          </Col>
-        </Row>
       </Container>
+
+      {/* Modal for More Information */}
+      <Modal show={showModal} onHide={handleModalClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{modalTitle}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{modalContent}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleModalClose}>
+            Kapat
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };
 
 export default Drm;
+

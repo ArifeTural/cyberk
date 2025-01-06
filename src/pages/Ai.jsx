@@ -46,18 +46,18 @@ function Ai() {
     <div>
       <Helmet>
         <title>
-          Yapay Zeka Çözümleri | İşinizi Dijital Dünyada Güçlendirin
+          Yapay Zeka Çözümleri | Cyberkoc ile İşinizi Dijital Dünyada Güçlendirin
         </title>
         <meta
           name="description"
-          content="Yapay zeka çözümleri ile iş süreçlerinizi dönüştürün. Makine öğrenmesi, doğal dil işleme ve bilgisayarla görme gibi çözümlerle verimliliği artırın."
+          content="Cyberkoc'un yapay zeka çözümleri ile iş süreçlerinizi dönüştürün. Makine öğrenmesi, doğal dil işleme ve bilgisayarla görme gibi çözümlerle verimliliği artırın."
         />
         <meta
           name="keywords"
-          content="yapay zeka, makine öğrenmesi, doğal dil işleme, bilgisayarla görme, chatbot, yapay zeka çözümleri, iş süreçleri"
+          content="yapay zeka, makine öğrenmesi, doğal dil işleme, bilgisayarla görme, chatbot, yapay zeka çözümleri, iş süreçleri, Cyberkoc"
         />
-        <meta name="author" content="Romsis Yazılım" />
-        <link rel="canonical" href="https://www.romsis.com/yapay-zeka" />
+        <meta name="author" content="Cyberkoc Yazılım" />
+        <link rel="canonical" href="https://www.cyberkoc.com/yapay-zeka" />
       </Helmet>
 
       <div className="yapaygiris">
@@ -140,3 +140,5 @@ function Ai() {
 }
 
 export default Ai;
+
+

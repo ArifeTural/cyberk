@@ -25,22 +25,22 @@ const WebDevelopment = () => {
   const calismaSureci = [
     {
       baslik: "1. Analiz",
-      aciklama: "Projenizin gereksinimlerini belirliyoruz.",
+      aciklama: "İhtiyaçlarınızı anlamak ve doğru çözümü belirlemek için derinlemesine analiz yapıyoruz.",
       img: "/img/analysis.png",
     },
     {
       baslik: "2. Tasarım",
-      aciklama: "Modern ve kullanıcı odaklı tasarımlar oluşturuyoruz.",
+      aciklama: "Kullanıcı dostu ve estetik açıdan çekici web tasarımları geliştiriyoruz.",
       img: "/img/web-design.png",
     },
     {
       baslik: "3. Geliştirme",
-      aciklama: "Yazılım çözümlerini uyguluyoruz.",
+      aciklama: "En güncel yazılım teknolojileri ile uygulamalarınızı geliştiriyoruz.",
       img: "/img/wrench.png",
     },
     {
       baslik: "4. Teslimat",
-      aciklama: "Projenizi başarıyla tamamlayıp teslim ediyoruz.",
+      aciklama: "Projenizi zamanında teslim ediyor ve müşteri memnuniyetini ön planda tutuyoruz.",
       img: "/img/checked.png",
     },
   ];
@@ -49,41 +49,41 @@ const WebDevelopment = () => {
     {
       baslik: "Frontend (Önyüz)",
       aciklama:
-        "Web sitenizin kullanıcıya gösterilen kısmıdır, tasarım ve etkileşim burada yönetilir.",
+        "Web sitenizin görsel tasarımı ve kullanıcı etkileşimi burada yönetilir.",
       detay:
-        "HTML, CSS ve JavaScript kullanarak modern, kullanıcı dostu ve mobil uyumlu tasarımlar oluşturuyoruz.",
+        "HTML, CSS ve JavaScript kullanarak kullanıcı dostu, estetik ve mobil uyumlu tasarımlar sunuyoruz.",
     },
     {
       baslik: "Backend (Arka Yüz)",
-      aciklama: "Veri işleme ve sunucu yönetimi backend kısmında yapılır.",
+      aciklama: "Veri yönetimi ve uygulama sunucu işlemleri arka planda gerçekleşir.",
       detay:
-        "Sunucular, veritabanları ve API'ler kullanılarak verilerin güvenli bir şekilde işlenmesi sağlanır. Node.js, PHP, Python gibi diller kullanılır.",
+        "Node.js, PHP, Python gibi dillerle sunucu ve veritabanı yönetimi sağlayarak uygulamanızın güvenliğini sağlıyoruz.",
     },
     {
       baslik: "Veritabanı Yönetimi",
       aciklama:
-        "Verilerin depolanması ve düzenlenmesi için veritabanları kullanılır.",
+        "Verilerinizin güvenli ve düzenli bir şekilde depolanması sağlanır.",
       detay:
-        "MySQL, PostgreSQL gibi ilişkisel veritabanları veya MongoDB gibi NoSQL veritabanları kullanılarak veri yönetimi sağlanır.",
+        "MySQL, PostgreSQL, MongoDB gibi veritabanlarıyla veri yönetimi ve optimizasyonu sağlıyoruz.",
     },
     {
       baslik: "Güvenlik",
-      aciklama: "Web uygulamanızın güvenliğini sağlamak kritik öneme sahiptir.",
+      aciklama: "Web sitenizin güvenliği bizim önceliğimizdir.",
       detay:
-        "SSL sertifikaları, kullanıcı doğrulama, şifreleme ve diğer güvenlik önlemleri ile web yazılımınızın güvenliğini sağlıyoruz.",
+        "SSL sertifikaları, kullanıcı doğrulama, veri şifreleme ve diğer güvenlik önlemleri ile web sitenizi koruma altına alıyoruz.",
     },
     {
       baslik: "SEO ve Dijital Pazarlama",
-      aciklama: "Web sitenizin arama motorlarında görünürlüğünü artırıyoruz.",
+      aciklama: "Web sitenizin arama motorlarında üst sıralarda yer almasını sağlıyoruz.",
       detay:
-        "SEO uyumlu yapılar ve dijital pazarlama stratejileri ile web sitenizi arama motorlarında üst sıralara taşırız.",
+        "SEO dostu yapılar ve etkili dijital pazarlama stratejileriyle web sitenizin görünürlüğünü artırıyoruz.",
     },
     {
       baslik: "API Entegrasyonu",
       aciklama:
-        "Farklı uygulamalar arasında veri paylaşımı ve entegrasyonu sağlar.",
+        "Farklı uygulamalar arasında sorunsuz veri paylaşımını sağlıyoruz.",
       detay:
-        "RESTful API'ler, GraphQL gibi teknolojiler kullanarak uygulamalar arasında sorunsuz veri alışverişi sağlarız. Üçüncü parti servislerle entegrasyon gerçekleştiririz.",
+        "RESTful API'ler ve GraphQL ile uygulamalar arasında veri entegrasyonu sağlıyoruz.",
     },
   ];
 
@@ -92,33 +92,33 @@ const WebDevelopment = () => {
       imgSrc: "/img/wep/webyazilim3.webp",
       altText: "Web Tasarım",
       title: "Modern Web Tasarım",
-      description: "Estetik ve kullanıcı dostu web siteleri oluşturuyoruz.",
+      description: "Görsel olarak çekici ve fonksiyonel web siteleri tasarlıyoruz.",
     },
     {
       imgSrc: "/img/wep/webyazilim1.webp",
       altText: "Özel Yazılım Geliştirme",
       title: "Özel Yazılım Geliştirme",
-      description: "İhtiyaçlarınıza uygun yazılım çözümleri.",
+      description: "İhtiyaçlarınıza uygun özel yazılım çözümleri sunuyoruz.",
     },
     {
       imgSrc: "/img/wep/webyazilim2.webp",
       altText: "SEO Hizmetleri",
       title: "SEO ve Dijital Pazarlama",
-      description: "İşletmenizi arama motorlarında zirveye taşıyoruz.",
+      description: "Web sitenizin dijital dünyada daha fazla görünür olmasını sağlıyoruz.",
     },
   ];
 
   return (
     <div>
       <Helmet>
-        <title>Web Yazılım Hizmetleri - Özel Yazılım ve Web Tasarımı</title>
+        <title>Web Yazılım Hizmetleri | Özel Yazılım ve Web Tasarımı | CyberKoc</title>
         <meta
           name="description"
-          content="Web yazılım hizmetlerimizle, modern tasarımlar, güvenli veri işleme, SEO uyumlu çözümler ve dijital pazarlama stratejileri ile web sitenizi geliştirin."
+          content="CyberKoc'un web yazılım hizmetleriyle modern, güvenli ve SEO uyumlu web siteleri oluşturun. Özelleştirilebilir çözümlerle dijital pazarlama ve SEO odaklı başarı."
         />
         <meta
           name="keywords"
-          content="web yazılım, özel yazılım, SEO, dijital pazarlama, API entegrasyonu, frontend, backend, güvenlik, veritabanı yönetimi"
+          content="web yazılım, özel yazılım, SEO, dijital pazarlama, API entegrasyonu, frontend, backend, güvenlik, web tasarımı"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>
@@ -145,12 +145,8 @@ const WebDevelopment = () => {
       <div style={{ backgroundColor: "#f8f9fa", padding: "50px 20px" }}>
         <Container>
           <p className="fs-4 text-center" style={{ color: "#647F93" }}>
-            Web yazılım hizmetleri, işletmelerin dijital varlıklarını
-            güçlendirir ve SEO uyumlu, kullanıcı dostu web siteleri sunar.
-            Özelleştirilebilir çözümlerle arama motorlarında üst sıralara
-            çıkmanıza yardımcı olurken, kullanıcı deneyimini ve güvenliği ön
-            planda tutar. Modern teknolojilerle optimize edilmiş web
-            yazılımları, her cihazda mükemmel performans sağlar.
+            Web yazılım hizmetlerimiz, işletmelerin dijital dönüşümünü hızlandırır.
+            SEO uyumlu, kullanıcı dostu web tasarımları, güvenli ve hızlı yazılım çözümleriyle dijital dünyada başarıya ulaşın.
           </p>
         </Container>
       </div>
@@ -211,9 +207,7 @@ const WebDevelopment = () => {
       <Row className="text-center m-5">
         <Col>
           <h3 style={{ color: "#142e70" }}>
-            Web yazılım çözümlerimizle işinizi dijital dünyada bir adım öne
-            taşıyın; özelleştirilmiş, hızlı ve güvenilir sistemlerle başarıyı
-            yakalayın!
+            Web yazılım çözümlerimizle işinizi dijital dünyada bir adım öne taşıyın; özelleştirilmiş, hızlı ve güvenilir sistemlerle başarıyı yakalayın!
           </h3>
           <Link to="/Teklif" onClick={scrollToTop}>
             <Button

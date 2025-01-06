@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import uiux from "../assets/uiux.webp";
-import uilist from "../assets/responsive-design.png";
+import uiux from "../assets/uiux.webp";  // .webp formatı daha hızlı yüklenir
+import uilist from "../assets/responsive-design.png";  // Yüksek çözünürlüklü görseller kullanılmalı
 import { Helmet } from "react-helmet";
 
 const Uiux = () => {
@@ -15,7 +15,7 @@ const Uiux = () => {
       id: 1,
       title: "Kullanıcı Araştırması",
       description:
-        "  Hedef kitlenin ihtiyaçlarını ve beklentilerini anlamak için yapılan detaylı araştırmalar sürecin ilk adımıdır.",
+        "Hedef kitlenin ihtiyaçlarını ve beklentilerini anlamak için yapılan detaylı araştırmalar sürecin ilk adımıdır.",
     },
     {
       id: 2,
@@ -36,13 +36,14 @@ const Uiux = () => {
         "Kullanıcı geri bildirimlerine göre sürekli iyileştirmeler yapılarak süreç tamamlanır.",
     },
   ];
+
   const uiuxteknolojiler = [
     {
       id: 1,
       image: "./img/teknoloji/figma.png",
       title: "Figma",
       description:
-        "  Figma, kullanıcı dostu arayüz tasarımları oluşturmak için popüler bir araçtır.",
+        "Figma, kullanıcı dostu arayüz tasarımları oluşturmak için popüler bir araçtır.",
     },
     {
       id: 2,
@@ -85,52 +86,40 @@ const Uiux = () => {
           content="UI & UX tasarımı, kullanıcı dostu web ve mobil çözümleri için temel unsurları içerir."
         />
         <meta property="og:image" content={uiux} />
-        <meta property="og:url" content="yourwebsite.com/ui-ux" />
+        <meta property="og:url" content="https://cyberkoc.com/ui-ux" />
+        <link rel="canonical" href="https://cyberkoc.com/ui-ux" />
       </Helmet>
       <Container>
-        <Container className="uigriris">
+        <section className="uigriris">
           <h1 className="uibaslik text-center mb-4 ">UI & UX TASARIMI</h1>
 
-          <img src={uiux} alt="" className="uimg" />
-        </Container>
+          <img src={uiux} alt="UI & UX Tasarımı" className="uimg" />
+        </section>
 
-        <Container className="m-5">
+        <section className="m-5">
           <h4 className="mt-3 mb-5 text-center" style={{ color: "#142e70" }}>
-            {" "}
-            UI (Kullanıcı Arayüzü) ve UX (Kullanıcı Deneyimi) tasarımı,
-            kullanıcı odaklı modern web ve mobil çözümlerin temelini oluşturur.
-            UI, görsel estetiğe ve kullanılabilirliğe odaklanırken; UX,
-            kullanıcıların etkileşimlerini optimize ederek memnuniyeti artırmayı
-            hedefler. Güncel tasarım trendleri ve teknolojilerle desteklenen
-            UI/UX süreçleri, etkili bir dijital varlık yaratmak için kritik
-            öneme sahiptir.
+            UI (Kullanıcı Arayüzü) ve UX (Kullanıcı Deneyimi) tasarımı, kullanıcı odaklı modern web ve mobil çözümlerin temelini oluşturur.
+            UI, görsel estetiğe ve kullanılabilirliğe odaklanırken; UX, kullanıcıların etkileşimlerini optimize ederek memnuniyeti artırmayı hedefler.
           </h4>
-        </Container>
+        </section>
 
         {/* Güncel Tasarım Trendleri Bölümü */}
         <Row className="mt-5 mb-5 d-flex justify-content-center align-items-center">
           <Col className="mt-5 d-flex justify-content-center">
             <img
               src={uilist}
-              alt="ui & ux list"
+              alt="UI & UX Tasarımı Listesi"
               className="pcimg list-unstyled"
+              loading="lazy"  // Lazy loading eklenmiş
             />
           </Col>
           <Col>
             <h2 className="uibaslik ">Güncel Tasarım Trendleri</h2>
             <ul className="mt-5 fs-5 text-center" style={{ color: "#4D657D" }}>
-              <li className="mb-2 list-unstyled">
-                <strong>Minimalist Tasarım</strong>
-              </li>
-              <li className="mb-2 list-unstyled">
-                <strong>Karanlık Mod</strong>
-              </li>
-              <li className="mb-2 list-unstyled">
-                <strong>Mikro Animasyonlar</strong>
-              </li>
-              <li className="mb-2 list-unstyled">
-                <strong>3D Görseller</strong>
-              </li>
+              <li className="mb-2 list-unstyled"><strong>Minimalist Tasarım</strong></li>
+              <li className="mb-2 list-unstyled"><strong>Karanlık Mod</strong></li>
+              <li className="mb-2 list-unstyled"><strong>Mikro Animasyonlar</strong></li>
+              <li className="mb-2 list-unstyled"><strong>3D Görseller</strong></li>
             </ul>
           </Col>
         </Row>
@@ -138,29 +127,20 @@ const Uiux = () => {
         {/* UI & UX Süreci Bölümü */}
         <Row className="m-5">
           <Col>
-            <h2 className="uibaslik  mb-5 fs-1">UI & UX Süreci</h2>
+            <h2 className="uibaslik mb-5 fs-1">UI & UX Süreci</h2>
             <Row>
-              {uiuxsurec.map((at) => {
-                const { id, title, description } = at;
-                return (
-                  <Col md={6} className="mb-3">
-                    <Card key={id} className="uikart">
-                      <Card.Body>
-                        <Card.Title className="text-center fs-4 text-info">
-                          {title}
-                        </Card.Title>
-                        <Card.Text
-                          className="text-center fs-6"
-                          style={{ color: "#4D657D" }}
-                        >
-                          {" "}
-                          {description}{" "}
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                );
-              })}
+              {uiuxsurec.map(({ id, title, description }) => (
+                <Col md={6} className="mb-3" key={id}>
+                  <Card className="uikart">
+                    <Card.Body>
+                      <Card.Title className="text-center fs-4 text-info">{title}</Card.Title>
+                      <Card.Text className="text-center fs-6" style={{ color: "#4D657D" }}>
+                        {description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
             </Row>
           </Col>
         </Row>
@@ -168,26 +148,23 @@ const Uiux = () => {
         {/* UI & UX için Kullanılan Teknolojiler Bölümü */}
         <section className="py-5 text-center">
           <div className="container">
-            <h2 className="uibaslik display-5 mb-4">
-              UI & UX Kullanılan Teknolojiler
-            </h2>
+            <h2 className="uibaslik display-5 mb-4">UI & UX Kullanılan Teknolojiler</h2>
             <div className="row justify-content-center text-center gap-2">
-              {uiuxteknolojiler.map((tool) => (
-                <div key={tool.id} className="col-md-4">
+              {uiuxteknolojiler.map(({ id, image, title, description }) => (
+                <div key={id} className="col-md-4">
                   <div className="card shadow-lg border-0">
                     <div className="d-flex justify-content-center">
                       <img
-                        src={tool.image}
+                        src={image}
                         className="card-img-top"
-                        alt={tool.name}
+                        alt={title}
                         style={{ width: "70px", height: "70px" }}
+                        loading="lazy" // Lazy loading eklenmiş
                       />
                     </div>
                     <div className="card-body">
-                      <h5 className="card-title alt-baslik">{tool.name}</h5>
-                      <p className="card-text text-secondary">
-                        {tool.description}
-                      </p>
+                      <h5 className="card-title alt-baslik">{title}</h5>
+                      <p className="card-text text-secondary">{description}</p>
                     </div>
                   </div>
                 </div>
@@ -200,8 +177,7 @@ const Uiux = () => {
       <Row className="text-center m-5">
         <Col>
           <h3 style={{ color: "#142e70" }}>
-            Hayalinizdeki tasarımı gerçeğe dönüştürmek için ilk adımı atın,
-            teklifinizi hemen alın!
+            Hayalinizdeki tasarımı gerçeğe dönüştürmek için ilk adımı atın, teklifinizi hemen alın!
           </h3>
           <Link to="/Teklif" onClick={scrollToTop}>
             <Button
@@ -218,3 +194,4 @@ const Uiux = () => {
 };
 
 export default Uiux;
+

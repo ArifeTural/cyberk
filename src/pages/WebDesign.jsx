@@ -11,24 +11,24 @@ const WebDesign = () => {
   const services = [
     {
       title: "Özel Web Tasarımı",
-      text: "İhtiyaçlarınıza göre tamamen özelleştirilmiş web tasarımları sunuyoruz.",
+      text: "Firmanızın ihtiyaçlarına özel, özgün ve yaratıcı web tasarımları.",
       imgSrc: "./img/mobile.png",
       detail:
-        "Özel web tasarımı, firmanızın ihtiyaçlarına göre tamamen size özel olarak hazırlanır. Tasarım süreci boyunca her aşamada sizinle iletişimde kalarak beklentilerinizi en iyi şekilde karşılamayı hedefliyoruz.",
+        "Özel web tasarımı, markanızın kimliğine ve hedef kitlenize uygun, özgün olarak hazırlanır. İhtiyaçlarınız doğrultusunda tüm tasarım aşamaları ile işbirliği yaparak siteyi en verimli hale getiriyoruz.",
     },
     {
-      title: "Mobil Uyumlu Tasarımlar",
-      text: "Tüm tasarımlarımız mobil cihazlarla uyumlu olup, her ekran boyutuna göre optimize edilir.",
+      title: "Mobil Uyumlu Web Tasarımları",
+      text: "Tüm cihazlarla uyumlu, mobil dostu web tasarımları ile kullanıcı deneyimini artırın.",
       imgSrc: "./img/ux.png",
       detail:
-        "Mobil uyumlu tasarımlar sayesinde, kullanıcılarınız her türlü cihazdan sitenize kolayca erişebilir. Mobil cihazlarda da mükemmel bir deneyim sunarak kullanıcı memnuniyetini artırıyoruz.",
+        "Mobil uyumlu tasarımlar sayesinde, kullanıcılarınız sitenizi her cihazda rahatlıkla görüntüleyebilir. Kullanıcı dostu arayüzler, mobil cihazlarda yüksek performans sağlar.",
     },
     {
-      title: "SEO Uyumlu Tasarımlar",
-      text: "Web sitenizin SEO dostu olmasını sağlayarak arama motorlarında üst sıralara çıkmasına yardımcı oluruz.",
+      title: "SEO Uyumlu Web Tasarımları",
+      text: "SEO uyumlu tasarımlar ile arama motorlarında üst sıralara çıkmanızı sağlıyoruz.",
       imgSrc: "./img/seo.png",
       detail:
-        "SEO uyumlu web siteleri, arama motorlarında daha görünür olmanıza yardımcı olur. Tasarım aşamasından başlayarak SEO'nun tüm gereksinimlerini göz önünde bulundurarak sitenizin sıralamasını iyileştiriyoruz.",
+        "SEO uyumlu web siteleri, arama motorları için optimize edilmiştir. Tasarım sürecinden itibaren SEO gereksinimlerini göz önünde bulundurarak sitenizin görünürlüğünü artırıyoruz.",
     },
   ];
 
@@ -45,14 +45,18 @@ const WebDesign = () => {
   return (
     <>
       <Helmet>
-        <title>Web Tasarım Hizmetleri | Dijital Varlığınızı Güçlendirin</title>
+        <title>Web Tasarım Hizmetleri | CyberKoc - Dijital Varlığınızı Güçlendirin</title>
         <meta
           name="description"
-          content="Yaratıcı ve kullanıcı dostu web siteleri ile markanızı dijital dünyada bir adım öne taşıyın. SEO uyumlu, mobil uyumlu ve özel web tasarımı hizmetleri sunuyoruz."
+          content="CyberKoc, SEO uyumlu, mobil uyumlu ve özel web tasarımı hizmetleri ile markanızı dijital dünyada bir adım öne taşır. Web tasarımı, SEO ve mobil uyumlu hizmetler hakkında bilgi alın."
         />
         <meta
           name="keywords"
-          content="web tasarımı, SEO uyumlu tasarımlar, mobil uyumlu tasarımlar, özel web tasarımı, dijital varlık"
+          content="web tasarımı, SEO uyumlu tasarımlar, mobil uyumlu tasarımlar, özel web tasarımı, dijital tasarım, profesyonel web tasarımı, CyberKoc web tasarımı"
+        />
+        <meta
+          name="robots"
+          content="index, follow"
         />
       </Helmet>
 
@@ -61,8 +65,7 @@ const WebDesign = () => {
           Web Tasarım Hizmetlerimizle Dijital Varlığınızı Güçlendirin
         </h1>
         <p className="w-t-par fs-4">
-          Yaratıcı ve kullanıcı dostu web siteleri ile markanızı dijital dünyada
-          bir adım öne taşıyın.
+          Web tasarımı, SEO uyumu ve mobil uyumluluk ile markanızı dijital dünyada güçlü bir şekilde temsil edin. CyberKoc ile web tasarım sürecinizi başlatın.
         </p>
       </header>
 
@@ -73,11 +76,12 @@ const WebDesign = () => {
           <Row>
             {services.map((service, index) => (
               <Col xs={12} sm={6} md={4} key={index}>
-                <Card className=" tasarim-hizmet-genel">
+                <Card className="tasarim-hizmet-genel">
                   <Card.Img
                     variant="top"
                     src={service.imgSrc}
-                    className="tasarim-hizmet-img "
+                    className="tasarim-hizmet-img"
+                    alt={`CyberKoc - ${service.title}`}
                   />
                   <Card.Body className="tasarim-hizmet">
                     <Card.Title>{service.title}</Card.Title>
@@ -127,8 +131,7 @@ const WebDesign = () => {
               <div style={{ textAlign: "center", padding: "1rem" }}>
                 <h3 className="wt-h3">1. Planlama</h3>
                 <p className="wt-par">
-                  Projeye başlarken ihtiyaçlarınızı belirler ve tasarım sürecine
-                  dair detayları planlarız.
+                  Projeye başlamadan önce, markanızın hedef kitlesini analiz eder ve ihtiyacınıza göre planlama yaparız.
                 </p>
               </div>
             </Col>
@@ -136,8 +139,7 @@ const WebDesign = () => {
               <div style={{ textAlign: "center", padding: "1rem" }}>
                 <h3 className="wt-h3">2. Tasarım</h3>
                 <p className="wt-par">
-                  İhtiyaçlarınıza göre özel, estetik ve kullanıcı dostu
-                  tasarımlar oluştururuz.
+                  Özgün ve kullanıcı dostu tasarımlar yaratırız. Her tasarım süreci, marka kimliğinizin güçlü bir şekilde yansıtılmasını sağlar.
                 </p>
               </div>
             </Col>
@@ -145,8 +147,7 @@ const WebDesign = () => {
               <div style={{ textAlign: "center", padding: "1rem" }}>
                 <h3 className="wt-h3">3. Geliştirme</h3>
                 <p className="wt-par">
-                  Tasarımı geliştirme aşamasına geçiririz ve sitenizi işlevsel
-                  hale getiririz.
+                  Tasarımı geliştirir ve web sitenizi tamamen işlevsel hale getiririz. SEO uyumu ve hızlı yükleme sürelerine özen gösteririz.
                 </p>
               </div>
             </Col>
@@ -175,3 +176,4 @@ const WebDesign = () => {
 };
 
 export default WebDesign;
+

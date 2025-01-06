@@ -122,10 +122,15 @@ function Ecommerce() {
         />
         <meta property="og:image" content={eticaret} />
         <meta property="og:url" content="https://www.romsis.com/eticaret" />
+        <link rel="canonical" href="https://www.romsis.com/eticaret" />
       </Helmet>
       <Container fluid className="p-4">
         <Container className="mb-5">
-          <img src={eticaret} alt="" className="eticaret-img" />
+          <img
+            src={eticaret}
+            alt="E-Ticaret ve Danışmanlık Hizmetleri"
+            className="eticaret-img"
+          />
         </Container>
 
         <Row className="text-center mb-4 uibaslik">
@@ -133,7 +138,7 @@ function Ecommerce() {
             <h1 className="display-4">E-Ticaret ve Danışmanlık Hizmetleri</h1>
             <p className="lead">
               İşinizi dijital dünyada büyütmek için ihtiyacınız olan her şey bir
-              arada!
+              arada! E-ticaret çözümleri ve danışmanlık hizmetlerimizle fark yaratın.
             </p>
           </Col>
         </Row>
@@ -217,3 +222,4 @@ function Ecommerce() {
 }
 
 export default Ecommerce;
+
